@@ -5303,9 +5303,9 @@ export interface NS extends Singularity {
    * then the data will be written in “append” mode which means that the data will be added at the
    * end of the text file.
    *
-   * @param handle - Port or text file that will be written to.
+   * @param handle - Text file that will be written to.
    * @param data - Data to write.
-   * @param mode - Defines the write mode. Only valid when writing to text files.
+   * @param mode - Defines the write mode.
    */
   write(handle: string, data?: string[] | number | string, mode?: "w" | "a"): Promise<void>;
 
